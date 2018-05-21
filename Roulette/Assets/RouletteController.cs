@@ -19,13 +19,13 @@ public class RouletteController : MonoBehaviour
         //マウスが押されたら回転速度を設定する
         if (Input.GetMouseButtonDown(0))
         {
-            this.rotSpeed = 10;
+            this.rotSpeed = 1000;
         }
 
         //回転速度分、ルーレットを回転させる
         transform.Rotate(0, 0, this.rotSpeed);
 
         //ルーレットを減速させる
-        this.rotSpeed *= 0.96f;
+        this.rotSpeed *= 0.76f;
     }
 }
